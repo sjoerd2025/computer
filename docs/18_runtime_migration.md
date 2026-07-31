@@ -11,6 +11,7 @@ This change is a breaking preview-API migration. Public execution now uses one r
 | `workspace.shell.kill(id, options)` | `workspace.runtime.killExec(id, options)` |
 | `workspace.shell.dispose(id, options)` | `workspace.runtime.disposeExec(id, options)` |
 | `workspace.code` / script execution | `workspace.runtime.exec(source, { backend: "isolate-javascript", input })` |
+| Workspace-core Codemode backend | External `WorkspaceCodemodeExecutor` from `examples/codemode` |
 
 `WorkspaceShell` still exists internally to implement command backends. It is not a public Workspace property.
 

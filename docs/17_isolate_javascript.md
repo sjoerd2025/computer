@@ -165,4 +165,4 @@ Console output is bounded but currently buffered in the Dynamic Worker and publi
 
 ## Trusted integrations
 
-A host can configure additional reserved capability modules through `IsolateJavaScriptBackend.trustedModules`; these modules are fixed when the backend is constructed and cannot be supplied or replaced by caller source.
+A host can configure additional reserved capability modules through `IsolateJavaScriptBackend.trustedModules`; these modules are fixed when the backend is constructed and cannot be supplied or replaced by caller source. [`examples/codemode`](../examples/codemode) uses this seam to implement Codemode's external `Executor` contract.

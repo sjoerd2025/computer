@@ -62,6 +62,8 @@ To see the pieces working together, start with the examples:
 - [`examples/worker`](examples/worker) — same HTTP surface as the
   container example, but the shell runs in a Dynamic Worker loaded
   through `env.LOADER`. No container.
+- [`examples/codemode`](examples/codemode) — external `@cloudflare/codemode`
+  `Executor` backed by a dedicated Computer JavaScript runtime.
 - [`examples/think`](examples/think) — an agent that uses the
   workspace as its working directory.
 

@@ -1,0 +1,23 @@
+{
+  "name": "@example/computer-codemode",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "External Codemode Executor backed by the Computer JavaScript runtime.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "test": "vitest run --config vitest.config.ts",
+    "typecheck": "tsc --noEmit",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "@cloudflare/codemode": "^0.5.0",
+    "@cloudflare/computer": "*"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.16.10",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.7",
+    "wrangler": "^4.107.1"
+  }
+}

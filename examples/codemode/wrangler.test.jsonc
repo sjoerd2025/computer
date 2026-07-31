@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "workspace-codemode-test",
+  "main": "src/test-worker.ts",
+  "compatibility_date": "2026-06-17",
+  "compatibility_flags": ["nodejs_compat", "experimental"],
+  "worker_loaders": [{ "binding": "LOADER" }],
+  "durable_objects": {
+    "bindings": [
+      { "name": "TestHost", "class_name": "TestHost" },
+      { "name": "CodemodeExample", "class_name": "CodemodeExample" }
+    ]
+  },
+  "migrations": [{ "tag": "v1", "new_sqlite_classes": ["TestHost", "CodemodeExample"] }]
+}
